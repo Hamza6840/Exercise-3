@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup Years</title>
+</head>
+<body>
+
+<h2>World Cup Years:</h2>
+
+<ul id="worldCupYears"></ul>
+
+<script>
+// Function to print World Cup years
+function printWorldCupYears(startYear, endYear) {
+    let yearsList = document.getElementById("worldCupYears");
+    for (let year = startYear; year <= endYear; year += 4) {
+        let listItem = document.createElement("li");
+        listItem.textContent = year;
+        yearsList.appendChild(listItem);
+    }
+}
+
+// Calling the function
+printWorldCupYears(2022, 2050);
+</script>
+
+</body>
+</html>
